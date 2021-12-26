@@ -33,10 +33,10 @@ $userid=$_GET['id'];
 <link href="../assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
 <link href="../assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css"/>
 <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="">
 <?php include("header.php");?>

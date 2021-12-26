@@ -90,8 +90,7 @@ echo "<script>alert('Votre animal a bien été ajouté');</script>";
                             <form class="form-horizontal" name="form1" method="post" action="" onSubmit="return valid();">
                             <div class="panel panel-default">
                              
-                                <div class="panel-body">                                                                        
-                                    <!-- <p align="center" style="color:#FF0000"><?=$_SESSION['msg1'];?><?=$_SESSION['msg1']="";?></p> -->
+                                <div class="panel-body">       
                                <div class="form-group">                                        
                                         <label class="col-md-3 col-xs-12 control-label">Nom de l'animal</label>
                                         <div class="col-md-6 col-xs-12">

@@ -82,6 +82,7 @@ check_login();
                                                         <th>Contact No</th>
                                                         <th>Registration Date</th>
                                                         <th>Action</th>
+                                                        <th><a type="button" class="btn btn-outline-success"href="add-user.php" >Add User </a></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>

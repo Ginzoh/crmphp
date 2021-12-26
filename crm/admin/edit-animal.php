@@ -33,15 +33,15 @@ echo "<script>alert('Les informations de votre animal ont bien été changé');<
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta content="" name="description" />
 <meta content="" name="author" />
-<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="../assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body class="">
@@ -78,11 +78,11 @@ echo "<script>alert('Les informations de votre animal ont bien été changé');<
         <?php $rt=mysqli_query($con,"select * from animal where id='".$_GET['id']."'");
         while($row=mysqli_fetch_array($rt))
         {
-        ?>	<a href="view-animals.php" class="button">Revenir à la liste</a>
+        ?>	<a href="manage-animals.php" class="button">Revenir à la liste</a>
 			
              <div class="row">
                         <div class="col-md-12">
-                        <h3> Editez votre animal</h3>
+                        <h3> Edition de <?php echo $row['name'] ?></h3>
                             <form class="form-horizontal" name="form1" method="post" action="" enctype="multipart/form-data">
                             <!-- onSubmit="return valid();"> -->
                             <div class="panel panel-default">
@@ -191,7 +191,7 @@ echo "<script>alert('Les informations de votre animal ont bien été changé');<
                                     <div class="form-group">                              
                                         <label class="col-md-3 col-xs-12 control-label">Date de décés</label>
                                         <div class="col-md-6 col-xs-12">
-                                            <div>
+                                            <div class="input-group">
                                                 <!-- <span class="input-group-addon"><span class="fa fa-pencil"></span></span> -->
                                                 <input type="date" name="date_deces" id="subject" value="<?php echo $row['date_deces'];?>" class="form-control"/>
                                             </div>            
@@ -203,10 +203,10 @@ echo "<script>alert('Les informations de votre animal ont bien été changé');<
 
                                 </div>
 								<?php } ?>
-                                <div class="panel-footer">                                
+                                <div class="panel-footer">                                  
                                     <input type="submit" value="Update" name="update" class="btn btn-primary pull-right">
                                     <!-- <a value="Delete" name="delete" class="btn btn-primary pull-right"> -->
-                                    <a type="button" class="btn btn-danger"href="delete_animal.php?id=<?php echo $_GET['id']; ?>" >Delete </a>
+                                    <a type="button" class="btn btn-danger"href="delete-animal.php?id=<?php echo $_GET['id']; ?>" >Delete </a>
                                     </div>
                             </div>
                             </form>
@@ -228,18 +228,18 @@ echo "<script>alert('Les informations de votre animal ont bien été changé');<
   </div>
 
  </div>
-<script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script> 
-<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> 
-<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
-<script src="assets/plugins/breakpoints.js" type="text/javascript"></script> 
-<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script> 
-<script src="assets/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script> 
-<script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js" type="text/javascript"></script>
-<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>  
-<script src="assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
-<script src="assets/js/core.js" type="text/javascript"></script> 
-<script src="assets/js/chat.js" type="text/javascript"></script> 
-<script src="assets/js/demo.js" type="text/javascript"></script> 
+<script src="../assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script> 
+<script src="../assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> 
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="../assets/plugins/breakpoints.js" type="text/javascript"></script> 
+<script src="../assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script> 
+<script src="../assets/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script> 
+<script src="../assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/pace/pace.min.js" type="text/javascript"></script>  
+<script src="../assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
+<script src="../assets/js/core.js" type="text/javascript"></script> 
+<script src="../assets/js/chat.js" type="text/javascript"></script> 
+<script src="../assets/js/demo.js" type="text/javascript"></script> 
 
 </body>
 </html>
